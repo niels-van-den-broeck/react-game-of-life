@@ -1,0 +1,31 @@
+*{
+    line-height: 0;
+}
+
+div{
+    margin: 0;
+    padding: 0;
+}
+.unchecked{
+      margin: 0;
+      padding: 0;
+    width: 15px;
+    height: 15px;
+      border: 1px solid black;
+      display: inline-block;
+  }
+
+.checked{
+    margin: 0;
+    padding: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    background-color: black;
+    display: inline-block;
+}
+
+button{
+    width: 100px;
+    height: 40px;
+}
