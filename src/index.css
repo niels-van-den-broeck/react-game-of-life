@@ -1,5 +1,22 @@
 *{
     line-height: 0;
+    font-family: 'Shadows Into Light', cursive;
+    color: white
+}
+
+h1{
+    font-size: 5em;
+    text-shadow: 2px 1px black;
+}
+
+body{
+    background: url("res/Page_Transparent_Background_Oasis_Skin_1.png");
+    background-size: cover;
+}
+
+p{
+    font-size: 2.5em;
+    text-shadow: 1px 1px black;
 }
 
 div{
@@ -9,23 +26,66 @@ div{
 .unchecked{
       margin: 0;
       padding: 0;
-    width: 15px;
-    height: 15px;
-      border: 1px solid black;
+      width: 20px;
+      height: 20px;
+      border: .01em solid black;
       display: inline-block;
-  }
+    background: royalblue;
+    -moz-box-shadow:    1px 1px 1px 1px inset skyblue;
+    -webkit-box-shadow: 1px 1px 1px 1px inset skyblue;
+    box-shadow:         1px 1px 1px 1px inset skyblue;
+    border-radius: 10%;
+
+}
 
 .checked{
     margin: 0;
     padding: 0;
-    width: 15px;
-    height: 15px;
-    border: 1px solid black;
-    background-color: black;
+    width: 20px;
+    height: 20px;
+    border: .01em solid black;
+    background: skyblue;
+    -moz-box-shadow:    1px 1px 1px 1px inset royalblue;
+    -webkit-box-shadow: 1px 1px 1px 1px inset royalblue;
+    box-shadow:         1px 1px 1px 1px inset royalblue;
     display: inline-block;
+    border-radius: 10%;
+
+
 }
 
+
+
 button{
-    width: 100px;
-    height: 40px;
+    width: 150px;
+    height: 60px;
+    border-radius: 15px;
+    margin: 10px;
+    background:skyblue;
+    -moz-box-shadow:    2px 1px 4px 1px inset royalblue;
+    -webkit-box-shadow: 2px 1px 4px 1px inset royalblue;
+    box-shadow:         2px 1px 4px 1px inset royalblue;
+    font-size: 1.5em;
+    text-shadow: 3px 1px royalblue;
+}
+
+#content{
+    margin: auto;
+    text-align: center;
+}
+
+input[type="range"]{
+    -webkit-appearance: none;
+    -moz-apperance: none;
+    border-radius: 6px;
+    height: 6px;
+    background:skyblue;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background-color: royalblue;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
 }
