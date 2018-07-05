@@ -23,8 +23,8 @@ const IntervalSlider = (props) => {
 class App extends Component {
     constructor(props) {
         super(props);
-        this.width = 80;
-        this.height = 80;
+        this.width = 50;
+        this.height = 30;
         this.interval = null;
         this.intervalTime = 500;
         this.state = {
@@ -76,30 +76,13 @@ class App extends Component {
                 let right = i+1 >= arrayToPass.length? 0 : i+1;
                 let up = j-1 < 0 ? arrayToPass[i].length-1 : j-1;
                 let down = j+1 >= arrayToPass[i].length ? 0 : j+1;
+                let conditionals = [originalArray[right][j],originalArray[left][j],originalArray[right][down],originalArray[right][up],
+                    originalArray[left][down],originalArray[left][up], originalArray[i][down],originalArray[i][up]]
 
-                if (originalArray[right][j]){
-                    amountOfNeighbours++;
-                }
-                if (originalArray[left][j]){
-                    amountOfNeighbours++;
-                }
-                if (originalArray[right][down]){
-                    amountOfNeighbours++;
-                }
-                if (originalArray[right][up]){
-                    amountOfNeighbours++;
-                }
-                if (originalArray[left][down]){
-                    amountOfNeighbours++;
-                }
-                if (originalArray[left][up]){
-                    amountOfNeighbours++;
-                }
-                if (originalArray[i][down]){
-                    amountOfNeighbours++;
-                }
-                if (originalArray[i][up]){
-                    amountOfNeighbours++;
+                for (let k = 0; k < conditionals.length; k++) {
+                    if (conditionals[k]) {
+                        amountOfNeighbours++;
+                    }
                 }
 
                 if (originalArray[i][j]){
@@ -118,7 +101,7 @@ class App extends Component {
 
         this.setState({
             fullGrid: arrayToPass,
-        })
+        });
     }
 
     onIntervalChange = (ev) => {
