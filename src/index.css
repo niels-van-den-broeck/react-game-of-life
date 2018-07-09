@@ -23,6 +23,30 @@ div{
     margin: 0;
     padding: 0;
 }
+
+#dropdown{
+    width: 200px;
+    height: 50px;
+    background:skyblue;
+    -moz-box-shadow:    2px 1px 4px 1px inset royalblue;
+    -webkit-box-shadow: 2px 1px 4px 1px inset royalblue;
+    box-shadow:         2px 1px 4px 1px inset royalblue;
+    font-size: 1.5em;
+    text-shadow: 3px 1px royalblue;
+}
+
+select option{
+    background:skyblue;
+    -moz-box-shadow:    2px 1px 4px 1px inset royalblue;
+    -webkit-box-shadow: 2px 1px 4px 1px inset royalblue;
+    box-shadow:         2px 1px 4px 1px inset royalblue;
+    font-size: 1.5em;
+    text-shadow: 3px 1px royalblue;
+    color: white;
+}
+
+
+
 .unchecked{
       margin: 0;
       padding: 0;
@@ -89,3 +113,7 @@ input[type='range']::-webkit-slider-thumb {
     height: 15px;
     width: 15px;
 }
+
+
+
+button:focus {outline:0;}
